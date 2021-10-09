@@ -224,7 +224,7 @@ $(document).ready(function(){
       swal("Oops...", "Form tidak boleh kosong!", "error");   
     }else{
       function hasExtension(inputID, exts) {
-        var fileName = document.getElementById(inputID).value;
+        var fileName = document.getElementById(inputIDs).value;
         return (new RegExp('(' + exts.join('|').replace(/\./g, '\\.') + ')$')).test(fileName);
       }
 
